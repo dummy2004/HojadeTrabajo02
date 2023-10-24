@@ -1,6 +1,14 @@
 #pragma once
 class FrontMiddleBackQueue
 {
+private:
+	struct Node {
+		int val;
+		Node* next;
+	};
+	Node* head;
+	Node* tail;
+	int size = 0;
 public:
 	FrontMiddleBackQueue();
 
@@ -16,4 +24,3 @@ public:
 
 	int popBack();
 };
-
