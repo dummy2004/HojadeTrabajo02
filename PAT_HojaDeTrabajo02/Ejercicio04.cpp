@@ -16,6 +16,7 @@ void FrontMiddleBackQueue::pushFront(int value)
         temp->next = head;
         head = temp;
     }
+
     size++;
 }
 
@@ -40,6 +41,7 @@ void FrontMiddleBackQueue::pushMiddle(int value)
         temp->next = demo->next;
         demo->next = temp;
     }
+
     size++;
 }
 
